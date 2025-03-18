@@ -1,5 +1,5 @@
-@use "theme" as *;
-@use "mixins" as *;
+@use "utils/variables" as *;
+@use "utils/mixins" as *;
 
 body{
     font-family: "Roboto", sans-serif;
@@ -15,8 +15,10 @@ height: 63px;
 padding: 14px 89px 13px 89px;
 flex-shrink: 0;
  
-&--img{
+& h1{
     height: 36px;
+    font-family: "roboto";
+    font-size: 30px;
 }
 }
 
@@ -24,10 +26,10 @@ flex-shrink: 0;
     @include flex-center;
     gap: 17px;
     background:$Grey-color ;
-     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+     @include  button-shadow;
      padding: 12px 15px 12px 15px;
-
-     &--fa-location-dot{
+      width: 100%;
+    & .fa-solid{
         height: 16px;
         width: 12px;
      }
@@ -37,38 +39,178 @@ flex-shrink: 0;
 margin: 0;
 font-size: 16px;
 font-weight: 500;
-color: $Dark-grey;
+color: #353535;
 
 }
 
 .Reservation{ 
 background: $Background-color;
+padding: 30px;
 
 & h1{
 text-align: center;
 margin: 0;
+margin-bottom: 10px;
 }
 & p{
-color: $Dark-grey; 
+color: #353535; 
 font-size: 18px;
 font-weight: 300;
 margin: 0;
 text-align: center;
 }
 }
-    
-.btn {
-@include flex-center;
+
+    .btn {
+        @include button;        
+}
+
+.Fonctionnement {
+ background-color: $White-color;
+& h2{
+font-size: 24px;
+font-weight: 700;
+margin: 0;
 padding: 20px;
-
+margin-top:15px ;
 
 }
-button {
-    padding: 10px;
-    border-radius: 25px;
-    color: $White-color;
-    background: $Gradient;
-    border: none;
+
+}
+.fa-solid {
+    color: $icone-color;
+    
+}
+
+.fa-store{
+    color:  $primary-color;
+}
+.steps{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .step{
+        @include flex-center;
+       
+    }
+    & .step-content{  
+        @include flex-center;
+        flex-direction: row;
+        gap: 12px;
+        width: 322.486px;
+        height: 72.379px;
+        background-color:$Background-color ;
+        border-radius: 20px;
+    }
+    & .step-number{
+        width: 15.273px;
+        height: 14.545px;
+        color: $White-color;
+        background-color: #9356DC;
+        border-radius: 50%;
+        @include flex-center;
+        font-size: 12px;
+        position: absolute;
+        left: 20px;
+        font-weight: 500;
+    }
+    
+}
+
+.restaurants-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
+.Restaurants{
+    background-color: #f6f6f6;
+    padding: 30px;
+    margin-top: 30px;
+
+    & h2{
+     font-size: 24px;
+     font-weight: 700;
+    }
+
+}
+
+
+.card{  
+background: #FFF;
+border-radius: 15px;
+box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+position: relative;
+& img{
+    width: 100%;
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    height: 231px;
+    object-fit: cover;
+}
+}
+.card-content{
+
+& h3{
+text-decoration: none;
+font-size: 14px;
+color:$Black-color ;
+}
+& p{ 
+    color:$Black-color ;
+   text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+  
+}
+}
+
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    /* text-align: center; */
+    text-decoration: none;
+    width: 80px;
+    height: 29px;
+    background: #99E2D0;
+    color: #008766;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+
+
+
+ footer{
+    background-color:#353535 ;
+    & .logo{
+       color: #FFFFFF;
+       width: 137.582px;
+        height: 27px;
+        flex-shrink: 0;
+    }
+    & li{
+       list-style-type: none;
+    }
+    & img{
+       color: #FFFFFF;
+    }
+    & a{
+       color: #FFFFFF;
+      
+       text-decoration: none;
+    }
+}
+
+
+
+
+
+/*********Palette**************/

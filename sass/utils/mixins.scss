@@ -1,0 +1,42 @@
+@mixin button-shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin footer{ 
+    
+        background-color:#353535 ;
+        & .logo{
+           color: #FFFFFF;
+           width: 137.582px;
+            height: 27px;
+        }
+        & li{
+           list-style-type: none;
+        }
+        & img{
+           color: #FFFFFF;
+        }
+        & a{
+           color: #FFFFFF;
+          text-decoration: none;
+        }
+       }
+
+@mixin button {
+   
+        @include flex-center;
+        padding: 20px;
+        & button {
+            padding: 10px;
+            border-radius: 25px;
+            color: #FFFFFF;
+            background:  linear-gradient( #FF79DA, #9356DC);
+            border: none;
+        }
+    }
+
+   
