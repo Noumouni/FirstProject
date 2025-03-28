@@ -5,21 +5,6 @@ body{
 margin: 0;
 }
 
-.header-n{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 150px;
-  & img {
-    width: 162px;
-    height: 44px;
-    margin-block-end: 10px;
-  }
-  & .fa-solid {
-    color: $Black-color;
-    width: 30px;
-  }
-}
 
 .main-container {
   & img {
@@ -43,7 +28,7 @@ margin: 0;
     align-items: center;
   }
   & h1 {
-    font-family: serif;
+    font-family: "Shrikhand";
     font-size: 24px;
     font-weight: 900;
   }
@@ -52,146 +37,202 @@ margin: 0;
 .entrees {
   margin-left: 20px;
   margin-top: 40px;
-  & h2 {
+
+  h2 {
     font-weight: 300;
     font-size: 16px;
+    margin-bottom: 10px;
+    
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: #B5E5CB;
+      margin-top: 5px;
+    }
   }
-  & .container {
+
+  .container {
     display: flex;
     flex-direction: column;
+    gap: 15px; // Espacement entre les blocs
+  }
+
+  .bloc {
+    display: flex;
     align-items: center;
+    justify-content: space-between; // Aligne le texte à gauche et le prix à droite
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Ajoute une ombre pour l'effet carte
    
+  }
+
+  .entrees-content {
+    display: flex;
+    flex-direction: column;
     gap: 5px;
   }
 
-  & .entrees-content {
-    width: 349px;
-    height: 69px;
-    border-radius: 15px;
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-top: 10px;
-  }
-  & p {
-    font-size: 15.043px;
-    font-weight: 300;
-    
-  }
-  & span{
-    font-weight: 700;
-    margin-left: 140px;
-
-}
-
-  & h3 {
+  h3 {
     margin: 0;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    color: #6C757D; // Couleur gris clair pour le texte
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
   }
 }
+
+
+
+
+  
 
 .plats {
   margin-left: 20px;
   margin-top: 40px;
-  & h2 {
+
+  h2 {
     font-weight: 300;
     font-size: 16px;
+    margin-bottom: 10px;
+    
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: #B5E5CB;
+      margin-top: 5px;
+    }
   }
-  & .container-plats {
+
+  .container-plats {
     display: flex;
     flex-direction: column;
+    gap: 15px; // Espacement entre les blocs
+  }
+
+  .bloc {
+    display: flex;
     align-items: center;
+    justify-content: space-between; // Aligne le texte à gauche et le prix à droite
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Ajoute une ombre pour l'effet carte
+   
+  }
+
+  .plats-content {
+    display: flex;
+    flex-direction: column;
     gap: 5px;
   }
 
-  & .plats-content {
-    width: 349px;
-    height: 69px;
-    border-radius: 15px;
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-top: 10px;
-  }
-  & p {
-    font-size: 15.043px;
-    font-weight: 300;
-    
-  }
-  & span{
-    font-weight: 700;
-    margin-left: 140px;
-
-}
-
-  & h3 {
+  h3 {
     margin: 0;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    color: #6C757D; // Couleur gris clair pour le texte
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
   }
 }
-
 
 .desserts {
   margin-left: 20px;
   margin-top: 40px;
-  & h2 {
+
+  h2 {
     font-weight: 300;
     font-size: 16px;
+    margin-bottom: 10px;
+    
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: #B5E5CB;
+      margin-top: 5px;
+    }
   }
-  & .desserts-container {
+
+  .desserts-container {
     display: flex;
     flex-direction: column;
+    gap: 15px; // Espacement entre les blocs
+  }
+
+  .bloc {
+    display: flex;
     align-items: center;
+    justify-content: space-between; // Aligne le texte à gauche et le prix à droite
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Ajoute une ombre pour l'effet carte
+   
+  }
+
+  .desserts-content {
+    display: flex;
+    flex-direction: column;
     gap: 5px;
   }
 
-  & .desserts-content {
-    width: 349px;
-    height: 69px;
-    border-radius: 15px;
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-top: 10px;
-  }
-  & p {
-    font-size: 15.043px;
-    font-weight: 300;
-    
-  }
-  & span{
-    font-weight: 700;
-    margin-left: 140px;
-
-}
-
-  & h3 {
+  h3 {
     margin: 0;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    color: #6C757D; // Couleur gris clair pour le texte
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
   }
 }
+
+
+
+
 .btn{
-  @include button;
-}
-footer {
-  background-color: #353535;
-  & .logo {
-    color: #ffffff;
-    width: 137.582px;
-    height: 27px;
-    flex-shrink: 0;
-  }
-  & li {
-    list-style-type: none;
-  }
-  & img {
-    color: #ffffff;
-  }
-  & a {
-    color: #ffffff;
-
-    text-decoration: none;
-  }
+@include flex-center;
+@include button;
 }
 
-  

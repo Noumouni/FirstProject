@@ -1,0 +1,55 @@
+
+@use "utils/variables" as *;
+@use "utils/mixins" as *;
+
+
+
+footer{
+  background-color:#353535 ;
+      & h5{
+          margin: 0;
+          color: white;
+          margin-left: 30px;
+           font-size: 20px;
+           font-family: "Shrikhand";
+      }
+      & li{
+         list-style-type: none;
+      }
+      & a{
+         color: #FFFFFF;
+        text-decoration: none;
+      }
+      
+}
+
+header{
+   @include flex-center;
+   height: 63px;
+   padding: 14px 89px 13px 89px;
+   flex-shrink: 0;
+    
+   & h1{
+       height: 36px;
+       font-family: "Shrikhand";
+       font-size: 30px;
+   }
+   }
+
+   .header-p {
+      display: flex;
+     padding-left: 20px;
+      align-items: center;
+     
+      & h1 {
+    font-family: "Shrikhand";
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px auto;
+      }
+      & .fa-solid {
+        color: $Black-color;
+        width: 30px;
+      }
+    }
+    
