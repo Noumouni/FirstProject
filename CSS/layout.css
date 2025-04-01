@@ -1,23 +1,5 @@
 /*******    Mes variables de couleurs ******/
 /*****typographie*******/
-footer {
-  background-color: #353535;
-}
-footer h5 {
-  margin: 0;
-  color: white;
-  margin-left: 30px;
-  font-size: 20px;
-  font-family: "Shrikhand";
-}
-footer li {
-  list-style-type: none;
-}
-footer a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -46,6 +28,24 @@ header h1 {
 .header-p .fa-solid {
   color: #000000;
   width: 30px;
+}
+
+footer {
+  background-color: #353535;
+}
+footer h5 {
+  margin: 0;
+  color: white;
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: "Shrikhand";
+}
+footer li {
+  list-style-type: none;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=layout.css.map */
