@@ -1,12 +1,9 @@
 @use "utils/variables" as *;
 @use "utils/mixins" as *;
-@use "layout" as *;
-
 
 body {
   margin: 0;
 }
-
 
 .main-container {
   & img {
@@ -33,9 +30,7 @@ body {
     font-family: "Shrikhand";
     font-size: 24px;
     font-weight: 900;
-    
   }
-  
 }
 
 .entrees {
@@ -46,14 +41,13 @@ body {
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px;
-    
-    
+
     &::after {
       content: "";
       display: block;
       width: 50px;
       height: 3px;
-      background-color: #B5E5CB;
+      background-color: #b5e5cb;
       margin-top: 5px;
     }
   }
@@ -72,7 +66,6 @@ body {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Ajoute une ombre pour l'effet carte
-   
   }
 
   .entrees-content {
@@ -91,7 +84,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     margin: 0;
-    color: #6C757D; // Couleur gris clair pour le texte
+    color: #6c757d; // Couleur gris clair pour le texte
   }
 
   span {
@@ -101,8 +94,6 @@ body {
   }
 }
 
-
-
 .plats {
   margin-left: 20px;
   margin-top: 40px;
@@ -111,14 +102,13 @@ body {
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px;
-    
-    
+
     &::after {
       content: "";
       display: block;
       width: 50px;
       height: 3px;
-      background-color: #B5E5CB;
+      background-color: #b5e5cb;
       margin-top: 5px;
     }
   }
@@ -137,7 +127,6 @@ body {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Ajoute une ombre pour l'effet carte
-   
   }
 
   .plats-content {
@@ -156,7 +145,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     margin: 0;
-    color: #6C757D; // Couleur gris clair pour le texte
+    color: #6c757d; // Couleur gris clair pour le texte
   }
 
   span {
@@ -166,11 +155,6 @@ body {
   }
 }
 
-
-
-  
-
-
 .desserts {
   margin-left: 20px;
   margin-top: 40px;
@@ -179,14 +163,13 @@ body {
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px;
-    
-    
+
     &::after {
       content: "";
       display: block;
       width: 50px;
       height: 3px;
-      background-color: #B5E5CB;
+      background-color: #b5e5cb;
       margin-top: 5px;
     }
   }
@@ -205,7 +188,6 @@ body {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Ajoute une ombre pour l'effet carte
-   
   }
 
   .desserts-content {
@@ -224,7 +206,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     margin: 0;
-    color: #6C757D; // Couleur gris clair pour le texte
+    color: #6c757d; // Couleur gris clair pour le texte
   }
 
   span {
@@ -234,10 +216,7 @@ body {
   }
 }
 
-.btn{
+.btn {
   @include button;
   @include flex-center;
 }
-
-
-

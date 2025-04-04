@@ -1,53 +1,5 @@
 /*******    Mes variables de couleurs ******/
 /*****typographie*******/
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 63px;
-  padding: 14px 89px 13px 89px;
-  flex-shrink: 0;
-}
-header h1 {
-  height: 36px;
-  font-family: "Shrikhand";
-  font-size: 30px;
-}
-
-.header-p {
-  display: flex;
-  padding-left: 20px;
-  align-items: center;
-}
-.header-p h1 {
-  font-family: "Shrikhand";
-  font-size: 30px;
-  font-weight: 400;
-  margin: 20px auto;
-}
-.header-p .fa-solid {
-  color: #000000;
-  width: 30px;
-}
-
-footer {
-  background-color: #353535;
-}
-footer h5 {
-  margin: 0;
-  color: white;
-  margin-left: 30px;
-  font-size: 20px;
-  font-family: "Shrikhand";
-}
-footer li {
-  list-style-type: none;
-}
-footer a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
 body {
   margin: 0;
 }
@@ -92,7 +44,7 @@ body {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #B5E5CB;
+  background-color: #b5e5cb;
   margin-top: 5px;
 }
 .entrees .container {
@@ -123,7 +75,7 @@ body {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
-  color: #6C757D;
+  color: #6c757d;
 }
 .entrees span {
   font-weight: 700;
@@ -145,7 +97,7 @@ body {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #B5E5CB;
+  background-color: #b5e5cb;
   margin-top: 5px;
 }
 .plats .container-plats {
@@ -176,7 +128,7 @@ body {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
-  color: #6C757D;
+  color: #6c757d;
 }
 .plats span {
   font-weight: 700;
@@ -198,7 +150,7 @@ body {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #B5E5CB;
+  background-color: #b5e5cb;
   margin-top: 5px;
 }
 .desserts .desserts-container {
@@ -229,7 +181,7 @@ body {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
-  color: #6C757D;
+  color: #6c757d;
 }
 .desserts span {
   font-weight: 700;
@@ -254,7 +206,7 @@ body {
   height: 50px;
   color: white;
   border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
