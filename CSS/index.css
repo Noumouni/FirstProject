@@ -261,8 +261,7 @@ body {
 @media (min-width: 1024px) {
   .entrees .bloc {
     display: flex;
-    width: 634px;
-    height: 69px;
+    width: 100%;
   }
   .entrees .container {
     display: flex;
@@ -271,8 +270,7 @@ body {
   }
   .plats .bloc {
     display: flex;
-    width: 634px;
-    height: 69px;
+    width: 100%;
   }
   .plats .container-plats {
     display: flex;
@@ -281,8 +279,7 @@ body {
   }
   .desserts .bloc {
     display: flex;
-    width: 634px;
-    height: 69px;
+    width: 100%;
   }
   .desserts .desserts-container {
     display: flex;
