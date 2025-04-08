@@ -1,7 +1,6 @@
 @use "utils/variables" as *;
 @use "utils/mixins" as *;
 @use "layout" as *;
-@use "note" as *;
 @use "restaurants" as *;
 
 body {
@@ -21,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
   animation: fadeOut 2s ease-out 2.5s forwards;
 }
 
@@ -115,9 +115,14 @@ body {
     margin-top: 15px;
   }
 }
-.fa-solid {
+.fa-mobile-screen-button {
+  color: $icone-color;
+}  
+
+.fa-list-ul {
   color: $icone-color;
 }
+
 
 .fa-store {
   color: $primary-color;
@@ -129,6 +134,7 @@ body {
 
   & .step {
     @include flex-center;
+    position: relative;
   }
   & .step-content {
     @include flex-center;
@@ -205,11 +211,42 @@ body {
   position: absolute;
   right: 20px;
   bottom: 20px;
+
+  &:hover{
+    background:linear-gradient( #FF79DA, #9356DC);  
+  }
+}
+.heart-wrapper{
+  
+  position: relative;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.heart-wrapper .back,
+.heart-wrapper .front {
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heart-wrapper .front {
+  background: linear-gradient(to top, #ff79da, #9356dc);
+  background-size: 100% 0%;
+  background-position: bottom;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-size 0.4s ease;
+}
+
+.heart-wrapper:hover .front {
+  background-size: 100% 200%;
 }
 
 
-
- 
 
 
 
@@ -238,23 +275,109 @@ display: flex;
 flex-direction: row;
 @include flex-center;
 }
-
-
-}
-@media (min-width: 768px){
-  .steps {
+.restaurants .restaurants-cards{
   display: flex;
   flex-direction: row;
-  @include flex-center;
-  }
+  flex-wrap: wrap;
+  
+}
+.entrees .bloc {
+display: flex;
+width: 634px;
+height: 69px;
 
-  .restaurants-cards{
-  flex-direction: row;
+}
+.entrees .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  justify-content: space-between;
+.plats .bloc {
+  display: flex;
+  width: 634px;
+  height: 69px;
+  
   }
-  .card{
-    width: calc(50% - 15px);
+  .plats .container-plats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .desserts .bloc {
+    display: flex;
+    width: 634px;
+    height: 69px;
     
+    }
+    .desserts .desserts-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .palette{
+      margin: auto;
+      width: 800px;
+    }
+
+    
+    .bloc {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    }
+    
+    .bloc:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    
+    .checkbox {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 80px;
+      background-color: #A6E5D3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      transform: translateX(100%);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .bloc:hover .checkbox {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .card{
+      width: 45%;
+    }
+    
+   
+    
+    footer{
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 30px 25px;
+    }
+    ul{
+      display: flex ;
+      flex-direction: row;
+      gap: 20px;
+    }
+  footer h5 {
+    margin-top: 10px;
+    margin-right: 25px;
   }
-}  
+}
