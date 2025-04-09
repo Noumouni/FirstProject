@@ -281,92 +281,10 @@ flex-direction: row;
   flex-wrap: wrap;
   
 }
-.entrees .bloc {
-display: flex;
-width: 634px;
-height: 69px;
 
-}
-.entrees .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.plats .bloc {
-  display: flex;
-  width: 634px;
-  height: 69px;
-  
-  }
-  .plats .container-plats{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .desserts .bloc {
-    display: flex;
-    width: 634px;
-    height: 69px;
-    
-    }
-    .desserts .desserts-container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .palette{
-      margin: auto;
-      width: 800px;
-    }
 
-    
-    .bloc {
-  position: relative;
-  background: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-    }
-    
-    .bloc:hover {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    }
-    
-    .checkbox {
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 80px;
-      background-color: #A6E5D3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top-right-radius: 30px;
-      border-bottom-right-radius: 30px;
-      transform: translateX(100%);
-      opacity: 0;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-    
-    .bloc:hover .checkbox {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    .card{
-      width: 45%;
-    }
-    
-   
-    
-    footer{
+  footer{
       display: flex;
       flex-direction: row-reverse;
       padding: 30px 25px;
