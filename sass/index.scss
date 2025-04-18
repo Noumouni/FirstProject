@@ -206,15 +206,8 @@ body {
     padding-left: 10px;
   }
 }
-
-.fa-regular {
+.heart-content{
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-
-  &:hover{
-    background:linear-gradient( #FF79DA, #9356DC);  
-  }
 }
 .heart-wrapper{
   
@@ -251,6 +244,8 @@ body {
 
 
 
+
+
 .paragraph {
   display: flex;
   justify-content: center;
@@ -281,8 +276,6 @@ flex-direction: row;
   flex-wrap: wrap;
   
 }
-
-
 
   footer{
       display: flex;

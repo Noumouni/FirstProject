@@ -131,6 +131,118 @@ body {
   color: black;
 }
 
+.bloc {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.bloc span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.check-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bloc:hover .check-container {
+  transform: translateX(0);
+}
+
+.bloc:hover .checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bloc:hover span {
+  transform: translateX(-60px);
+}
+
+.entrees {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUpGroup 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.plats {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUpGroup 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.desserts {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUpGroup 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUpGroup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bloc span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bloc:hover .check-container {
+  transform: translateX(0);
+}
+
+.bloc:hover .checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bloc:hover span {
+  transform: translateX(-60px);
+}
+
 .plats {
   margin-left: 20px;
   margin-top: 40px;
@@ -290,41 +402,19 @@ body {
     margin: auto;
     width: 800px;
   }
-  .bloc {
-    position: relative;
-    background: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    overflow: hidden;
+  footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row-reverse;
+    padding: 30px 25px;
   }
-  .bloc:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  }
-  .checkbox {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 80px;
-    background-color: #A6E5D3;
+  ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    flex-direction: row;
+    gap: 20px;
   }
-  .bloc:hover .checkbox {
-    transform: translateX(0);
-    opacity: 1;
+  footer h5 {
+    margin-top: 10px;
+    margin-right: 25px;
   }
 }
 body {
@@ -549,13 +639,8 @@ body {
   padding-left: 10px;
 }
 
-.fa-regular {
+.heart-content {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-.fa-regular:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .heart-wrapper {
@@ -617,79 +702,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .entrees .bloc {
-    display: flex;
-    width: 634px;
-    height: 69px;
-  }
-  .entrees .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .plats .bloc {
-    display: flex;
-    width: 634px;
-    height: 69px;
-  }
-  .plats .container-plats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .desserts .bloc {
-    display: flex;
-    width: 634px;
-    height: 69px;
-  }
-  .desserts .desserts-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .palette {
-    margin: auto;
-    width: 800px;
-  }
-  .bloc {
-    position: relative;
-    background: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .bloc:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  }
-  .checkbox {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 80px;
-    background-color: #A6E5D3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  .bloc:hover .checkbox {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  .card {
-    width: 45%;
   }
   footer {
     display: flex;
